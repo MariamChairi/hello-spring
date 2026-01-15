@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     public String hello() {
-        return "Hello World - Version 2.0 avec CI/CD automatique!";
+        return "Hello World - Version 2.0 avec CI/CD automatique - Mari!";
     }
 }
