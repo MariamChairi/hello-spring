@@ -2,13 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9'
+        maven 'Maven'
     }
 
     environment {
         DOCKERHUB_REPO = 'marichairi03/hello-spring'
         CONTAINER_NAME = 'hello-app'
-        APP_PORT = '8080'
+        APP_PORT = '9090'
+        SPRING_PORT = '8080'
     }
 
     stages {
@@ -44,7 +45,7 @@ pipeline {
                             docker pull ${DOCKERHUB_REPO}:latest
                             docker run -d \
                               --name ${CONTAINER_NAME} \
-                              -p ${APP_PORT}:${APP_PORT} \
+                              -p ${APP_PORT}:${SPRING_PORT} \
                               ${DOCKERHUB_REPO}:latest
                         """
                     }
