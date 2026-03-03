@@ -4,6 +4,7 @@
 
 ## ✨ Features
 - ⚙️ **Spring Boot REST API** - Minimal "Hello World"
+- 🪝 **Webhooks** - Event-driven automation triggers
 - 🔄 **Jenkins Pipeline** - Automated CI/CD
 - 🧪 **Unit Tests** - JUnit coverage
 - 🐳 **Docker** - Containerized deployment
